@@ -1,0 +1,9 @@
+includes:
+	- vendor/phpstan/phpstan/conf/config.level7.neon
+parameters:
+	bootstrap: %currentWorkingDirectory%/tests/phpstan/bootstrap.php
+	autoload_directories:
+	    -  %currentWorkingDirectory%/src
+	autoload_files: []
+	polluteCatchScopeWithTryAssignments: true
+	reportUnmatchedIgnoredErrors: false
